@@ -1,0 +1,57 @@
+:root {
+    --h1_size: 6rem;
+    --h2_size: 2.5rem;
+    --p_size: 1.25rem;
+    --screen_height:50rem;
+    --img_height:25rem;
+}
+
+/* /////////////////////////////////////// X-SMALL SCREENS  /////////////////////////////////////// */
+@media all and (max-width: 700px) {
+    h1 {font-size: calc(var(--h1_size)*0.5);}
+    h2 {font-size: calc(var(--h2_size)*0.6);}
+    p {font-size: calc(var(--p_size)*0.65);}
+    #bio img{height: calc(var(--img_height)*0.3); width: auto; }
+    .founders {display:contents;}
+}
+/* /////////////////////////////////////// SMALL SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 700px) and (max-width: 1099px) {
+    h1 {font-size: calc(var(--h1_size)*0.6);}
+    h2 {font-size: calc(var(--h2_size)*0.65);}
+    p {font-size: calc(var(--p_size)*0.7);}
+    #bio img{height: calc(var(--img_height)*0.4); width: auto; }
+    .founders {display:contents;}
+}
+/* ////////////////////////////////////// MEDIUM SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 1100px) and (max-width: 1499px) {
+    h1 {font-size: calc(var(--h1_size)*0.7);}
+    h2 {font-size: calc(var(--h2_size)*0.7);}
+    p {font-size: calc(var(--p_size)*0.85);}
+    #bio img{height: calc(var(--img_height)*0.6); width: auto; }
+
+
+}
+/* /////////////////////////////////////// LARGE SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 1500px) and (max-width: 1999px) {
+    h1 {font-size: calc(var(--h1_size)*0.85);}
+    h2 {font-size: calc(var(--h2_size)*0.85);}
+    p {font-size: var(--p_size);}
+    #bio img{height: calc(var(--img_height)*0.7); width: auto; }
+
+}
+/* ////////////////////////////////////// X-LARGE SCREENS  ////////////////////////////////////// */
+@media all and (min-width: 2000px) and (max-width: 3199px) {
+    h1 {font-size: var(--h1_size);}
+    h2 {font-size: var(--h2_size);}
+    p {font-size: var(--p_size);}
+    #bio img{height: calc(var(--img_height)*0.8); width: auto; }
+
+}
+/* ///////////////////////////////////// XX-LARGE SCREENS  ////////////////////////////////////// */
+@media all and (min-width: 3200px) {
+    h1 {font-size: var(--h1_size);}
+    h2 {font-size: var(--h2_size);}
+    p {font-size: var(--p_size);}
+    #bio img{height: calc(var(--img_height)*0.9); width: auto; }
+
+}
