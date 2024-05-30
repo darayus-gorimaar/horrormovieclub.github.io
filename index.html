@@ -5,45 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horror Movie Club</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/autosize.css" />
   <script src="script.js"></script>
 
 </head>
 
 
-
-
 <body>
   <div id = "main">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="#contact">Founders</a>
+    </div>
+
     <div id="landing">
-      <div class="container">
-        <marquee direction="right">
-          <h1>Horror Movie Club</h1>
-        </marquee>
+      <div class="top-section">
+          <h1>Effed Up Movie Club</h1>
       </div>
     </div>
 
 
     <div class="container">
+      <!-- ABOUT US -->
       <div>
         <h2>About Us</h2>
-        <p>Welcome to the Horror Movie Club, where the brave come to get scared! We are a community of horror enthusiasts who love all things spooky, eerie, and spine-chilling. Whether you're a seasoned horror aficionado or just dipping your toes into the genre, you'll find a home here among fellow fans of the macabre.</p>
+        <p>Welcome to the Effed Up Movie Club, where the brave come to get scared! We are a community of horror enthusiasts who love all things spooky, eerie, and spine-chilling. Whether you're a seasoned horror aficionado or just dipping your toes into the genre, you'll find a home here among fellow fans of the macabre.</p>
       </div>
+
+      <!-- UPCOMING MOVIE -->
       <div>
-          <h2>Currently Watching: <a href="https://www.imdb.com/title/tt10731256/?ref_=nv_sr_srsg_1_tt_8_nm_0_q_dont%2520worr">Don't Worry Darling</a> </h2>
-          <h3>Week Of: <span id="startDate"></span></h3>
-          <img src="Don't_Worry_Darling_Poster_2.jpg" alt="Don't Worry Darling" width="400">
+          <h2>Up Next: <a href="https://www.imdb.com/title/tt10731256/?ref_=nv_sr_srsg_1_tt_8_nm_0_q_dont%2520worr">Don't Worry Darling</a> </h2>
+          <h3>Week Of: <span id="startDate"></span> - <span id="endDate"></span></h3>
+          <img src="images/Don't_Worry_Darling_Poster_2.jpg" alt="Don't Worry Darling" width="400">
       </div>
+
+      <!-- MOVIE SPREADSHEET -->
       <div>
         <h2>Movie List</h2>
-        <!-- Paste your <iframe> code here -->
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6W82aujnngUJG_p48n3Bp9n6jS6rYBoW_LPlJOEy6iS90zQwzOEPvPgJOjniVfxA-oe47iOeXf1ZF/pubhtml"></iframe>
       </div>
+
+      <!-- PAST MEETING ALBUM -->
       <div>
-        <h2>Follow Us!</h2>
-        <p>Follow us on Instagram! @effedupmovie.club</p>
-        <a href="https://www.instagram.com/effedupmovie.club/" class="instagram-link">Follow us</a>
+        <h2>Past Meetings</h2>
+        <!-- this code block must be updated in order to update album slideshow -->
+        <!-- from here -->
+        <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+        <div class="pa-gallery-player-widget" style="width:640px; height:480px; display:none;"
+          data-link="https://photos.app.goo.gl/4TMnjKU6y9ypjnae9"
+          data-title="HMC"
+          data-description="2 new items added to shared album">
+          <object data="https://lh3.googleusercontent.com/pw/AP1GczNC_bdSBPDNu9g3K3ObvbCEo8lISMa1s3vPUvEymas0VAQt-fT3obkgnvl0VQYbvZB9cgibLwnZX4uhq0BJQ8RbWt1at0QyD4FKyh3dKl1599RUZqo5=w1920-h1080"></object>
+          <object data="https://lh3.googleusercontent.com/pw/AP1GczOCd0B4ZKhIdXlj9TtnpJOeCOlp9qe_DAlPZ68-H5QWttTcMhG6icRvsXItmbnfg3Cw8GFesANb-dYSd5KvtrvzzCW0iMGrmo2gL7kThOI9H_XPJUXe=w1920-h1080"></object>
+        </div>
+        <!-- to here -->
       </div>
     </div>
-</div>
+  </div>
 </body>
+
+<footer>
+  <p>Follow us on Instagram! 
+  <a href="https://www.instagram.com/effedupmovie.club/" class="instagram-link">Instagram</a>
+  </p>
+</footer>
