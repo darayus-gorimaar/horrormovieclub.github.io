@@ -16,5 +16,21 @@ function updateCurrentWeekDates() {
     document.getElementById('endDate').textContent = dates.endDate;
 }
 
+//https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6W82aujnngUJG_p48n3Bp9n6jS6rYBoW_LPlJOEy6iS90zQwzOEPvPgJOjniVfxA-oe47iOeXf1ZF/pubhtml
+async function fetchSheets() {
+    var spreadsheet = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6W82aujnngUJG_p48n3Bp9n6jS6rYBoW_LPlJOEy6iS90zQwzOEPvPgJOjniVfxA-oe47iOeXf1ZF/pubhtml";
+    const response = await fetch(spreadsheet).then(response => {return response});
+    const json = response.json();
+    console.log(json);
+    let list_of_cells = json.feed.entry;
+    for (cell of list_of_cells) {
+        console.log(cell.gs$cell.$t);
+    }
+}
+
+
+
+
 // Call the function when the page loads
+window.onload = fetchSheets;
 window.onload = updateCurrentWeekDates;
