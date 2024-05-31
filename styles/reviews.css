@@ -101,10 +101,64 @@ iframe {
 }
 /* -------- */
 
+
+/* projects */
+.projects{
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+.collapsible {
+    font-family: Horror;
+    background-color: #1f1f1f;
+    color: #c04646;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    font-size: 2.5rem;
+    border: 2px solid whitesmoke;
+    border-radius: 2rem;
+    transition: 0.5s;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    
+  }
+  
+  .collapsible:hover {
+    background-color: whitesmoke;
+    color:#292929;
+  }
+  .collapsible:active {
+    background-color: #292929;
+  }
+  .content {
+    margin: 1rem auto;
+    background-color: #1f1f1f;
+    display: grid;
+    position: relative;
+    width: 80%;
+  }
+  .left {
+    background-color: #1f1f1f;
+    grid-column: 1;
+    text-align: left;
+    /* padding-right: 2rem; */
+    min-width: 20rem;
+}
+.right {
+    background-color: #1f1f1f;
+    grid-column: 2;
+    text-align: right;
+    padding-left: 2rem;
+}
+
+
+
 /* fOOTER */
 footer {
     margin-top:auto;
-    background-color: #333;
+    background-color: #1f1f1f;
     text-align: center;
 }
 .instagram-link {
