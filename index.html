@@ -5,9 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horror Movie Club</title>
-  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-  <link rel="stylesheet" type="text/css" href="styles/autosize.css" />
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  <link rel="stylesheet" type="text/css" href="styles/common.css" />
   <link rel="icon" href="images/icon.JPG">
+	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- font-family: "Montserrat", sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- font-family: "Oswald", sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -16,7 +24,7 @@
   <div id = "main">
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
-      <!-- <a href="reviews.html">Reviews</a> -->
+      <a href="reviews.html">Reviews</a>
       <a href="up-next.html">Up Next...</a>
       <a href="founders.html">Founders</a>
     </div>
@@ -32,21 +40,26 @@
       <!-- ABOUT US -->
       <div>
         <h2>About Us</h2>
-        <p>Welcome to the Effed Up Movie Club, where the brave come to get scared! We are a community of horror enthusiasts who love all things spooky, eerie, and spine-chilling. Whether you're a seasoned horror aficionado or just dipping your toes into the genre, you'll find a home here among fellow fans of the macabre.</p>
+        <p>Welcome to the Effed Up Movie Club, where the brave come to get scared! We are a community of horror enthusiasts who love all things spooky, eerie, and spine-chilling. 
+          Whether you're a seasoned horror aficionado or just dipping your toes into the genre, you'll find a home here among fellow fans of the macabre.<br><br>
+          Checkout our founders page to learn about our members: <a href="founders.html">Founders</a> 
+        </p>
       </div>
 
       <!-- UPCOMING MOVIE -->
-      <div class = "upcoming">
+      <!-- <div class = "upcoming">
           <h2>Up Next: <a href="https://www.imdb.com/title/tt10731256/?ref_=nv_sr_srsg_1_tt_8_nm_0_q_dont%2520worr">Don't Worry Darling</a> </h2>
           <h3>Week Of: <span id="startDate"></span> - <span id="endDate"></span></h3>
           <img src="images/Don't_Worry_Darling_Poster_2.jpg" alt="Don't Worry Darling" width="400">
           <p>If you want to see what's in store for the future, check out our "Up Next..." page. Here you'll find a spreadsheet detailing all the movies we're planning to show!</p>
 
-      </div>
+      </div> -->
+      <!-- <h2>Recent Showing</h2> -->
+
 
       <!-- PAST MEETING ALBUM -->
-      <div>
-        <h2>Recent Meetings</h2>
+      <h2>Past Meetings</h2>
+      <div id = "slideshow">
         <!-- this code block must be updated in order to update album slideshow -->
         <!-- from here -->
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
@@ -61,10 +74,12 @@
       </div>
     </div>
   </div>
+
+  
+  <script src="script.js"></script>
 </body>
 
-<footer>
-  <p>Follow us on Instagram! &nbsp;
-  <a href="https://www.instagram.com/effedupmovie.club/" class="instagram-link">Instagram</a>
-  </p>
+<footer id = "footer">
+  <a target = "_blank" href="https://www.instagram.com/effedupmovie.club/" >Instagram</a> 
+  <a target = "_blank" href="https://github.com/darayus-gorimaar/horrormovieclub.github.io" >GitHub Repo</a>
 </footer>

@@ -6,130 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horror Movie Club</title>
   <link rel="stylesheet" type="text/css" href="styles/reviews.css" />
-  <link rel="stylesheet" type="text/css" href="styles/autosize.css" />
-  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/common.css" />
+	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 
 </head>
 
 
 <body>
-  <div id = "main">
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
-      <a href="#news">Reviews</a>
+      <a href="reviews.html">Reviews</a>
       <a href="up-next.html">Up Next...</a>
       <a href="founders.html">Founders</a>
     </div>
 
-    <!-- Collapsible -->
-    <div class="projects">
-      <button type="button" class="collapsible">Don't Worry Darling (2022)</button>
-      <div class="content">
-        <div class="left">
-            <p> 
-              <h3><b>Darayus</b><br></h3>
-              <i>I did not see that ending coming in a million years but it was a really crazy and dark twist</i><br><br>
-              <span style="color: #c04646">Rating: 9/10</span>
-              <br><br>
-              <h3><b>Brendan</b><br></h3>
-              <i>Unexpected twist, it was very unpleasant to imagine this society irl, kinda sickening but harry styles is cute</i><br><br>
-              <span style="color: #c04646">Rating: 8/10</span>
-            </p>
-        </div>
-        
-        <div class="right">
-          <div id="bio">
-            <img src="images/Don't_Worry_Darling_Poster_2.jpg" alt="Don't Worry Darling Poster">
-          </div>
-        </div>      
+
+    <div id = "movies">
+      <div id = "search">
+        <input type="text" id = "myInput" onkeyup="searchFunction()" placeholder="Search for movies...">
       </div>
     </div>
-    <!--  -->
-    <!-- Collapsible -->
-    <div class="projects">
-      <button type="button" class="collapsible">Raw (2016)</button>
-      <div class="content">
-        <div class="left">
-            <p> 
-              <h3><b>Darayus</b><br></h3>
-              <i>Interesting movie, fascinating ending. Kinda made me hungry</i><br><br>
-              <span style="color: #c04646">Rating: 7.5/10</span>
-              <br>
-              <br>
-              <h3><b>Brendan - 6.5/10</b><br></h3>
-              <i>It was a fun movie. Would recommend to a small child</i><br><br>
-              <span style="color: #c04646">Rating: 6.5/10</span>
-
-            </p>
-        </div>
-        
-        <div class="right">
-          <div id="bio">
-            <img src="images/Raw_Poster.jpeg" alt="Don't Worry Darling Poster">
-          </div>
-        </div>      
-      </div>
-    </div>
-    <!--  -->
-    <!-- Collapsible -->
-    <div class="projects">
-      <button type="button" class="collapsible">Human Centipede Trilogy (2009-2015)</button>
-      <div class="content">
-        <div class="left">
-            <p> 
-              <h3><b>Darayus</b><br></h3>
-              <i>Outrageous and somewhat comedic at times. If you sat through the first two you'll probably enjoy this one you sicko</i><br><br>
-              <span style="color: #c04646">Rating: 8/10</span>
-              <br><br>
-              <h3><b>Brendan</b><br></h3>
-              <i>Unexpected twist, it was very unpleasant to imagine this society irl, kinda sickening but harry styles is cute</i><br><br>
-              <span style="color: #c04646">Rating: 12/10</span>
-
-            </p>
-        </div>
-        
-        <div class="right">
-          <div id="bio">
-            <img src="images/HC3_Poster.jpg" alt="Don't Worry Darling Poster">
-          </div>
-        </div>      
-      </div>
-    </div>
-    <!--  -->
-    <!-- Collapsible -->
-    <div class="projects">
-      <button type="button" class="collapsible">Poughkeepsie Tapes (2007)</button>
-      <div class="content">
-        <div class="left">
-            <p> 
-              <h3><b>Darayus</b><br></h3>
-              <i>Thought it sucked</i><br><br>
-              <span style="color: #c04646">Rating: -1000/10</span>
-              <br><br>
-              <h3><b>Brendan</b><br></h3>
-              <i>Pretty awful</i><br><br>
-              <span style="color: #c04646">Rating: 0.1/10</span>
-
-            </p>
-        </div>
-        
-        <div class="right">
-          <div id="bio">
-            <img src="images/Poughkeepsie_Tapes_Poser.jpg" alt="Don't Worry Darling Poster">
-          </div>
-        </div>      
-      </div>
-    </div>
-    <!--  -->
 
 
-</div>
-<script src="script.js"></script>
-
+<script src="reviews.js"></script>
 </body>
 
-<footer>
-  <p>Follow us on Instagram! &nbsp;
-  <a href="https://www.instagram.com/effedupmovie.club/" class="instagram-link">Instagram</a>
-  </p>
+<footer id = "footer">
+  <a target = "_blank" href="https://www.instagram.com/effedupmovie.club/" >Instagram</a> 
+  <a target = "_blank" href="https://github.com/darayus-gorimaar/horrormovieclub.github.io" >GitHub Repo</a>
 </footer>
