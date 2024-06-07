@@ -67,20 +67,20 @@ iframe {
     display: grid;
     position: relative;
     width: 100%;
-    min-height: 75vh;
 }
   
-.left {
+#left {
     background-color: #1f1f1f;
     grid-column: 1;
     text-align: center;
+    padding: 2rem 3rem;
+
 }
   
-.right {
+#right {
     background-color: #1f1f1f;
     grid-column: 2;
     text-align: center;
-}
-#bio {
     padding: 2rem 3rem;
+
 }
