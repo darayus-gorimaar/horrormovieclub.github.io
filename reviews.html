@@ -7,25 +7,27 @@
   <title>Horror Movie Club</title>
   <link rel="stylesheet" type="text/css" href="styles/reviews.css" />
   <link rel="stylesheet" type="text/css" href="styles/common.css" />
+  <link rel="icon" href="images/icon.JPG">
 	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 
 </head>
 
 
 <body>
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="up-next.html">Up Next...</a>
-      <a href="founders.html">Founders</a>
-    </div>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="up-next.html">Up Next...</a>
+    <a href="founders.html">Founders</a>
+  </div>
 
 
-    <div id = "movies">
-      <div id = "search">
-        <input type="text" id = "myInput" onkeyup="searchFunction()" placeholder="Search for movies...">
-      </div>
+  <div id = "movies">
+    <div id = "search">
+      <input type="text" id = "myInput" onkeyup="searchFunction()" onkeydown="searchFunction()" placeholder="Search for movies...">
     </div>
+    <div id = "reviews"></div>
+  </div>
 
 
 <script src="reviews.js"></script>

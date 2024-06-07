@@ -9,13 +9,6 @@
   <link rel="stylesheet" type="text/css" href="styles/common.css" />
   <link rel="icon" href="images/icon.JPG">
 	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- font-family: "Montserrat", sans-serif; -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- font-family: "Oswald", sans-serif; -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
 
 </head>
 
@@ -46,15 +39,13 @@
         </p>
       </div>
 
-      <!-- UPCOMING MOVIE -->
-      <!-- <div class = "upcoming">
-          <h2>Up Next: <a href="https://www.imdb.com/title/tt10731256/?ref_=nv_sr_srsg_1_tt_8_nm_0_q_dont%2520worr">Don't Worry Darling</a> </h2>
-          <h3>Week Of: <span id="startDate"></span> - <span id="endDate"></span></h3>
-          <img src="images/Don't_Worry_Darling_Poster_2.jpg" alt="Don't Worry Darling" width="400">
-          <p>If you want to see what's in store for the future, check out our "Up Next..." page. Here you'll find a spreadsheet detailing all the movies we're planning to show!</p>
 
-      </div> -->
-      <!-- <h2>Recent Showing</h2> -->
+      <h2>Recent Showing</h2>
+      <div id = "recent">
+        <div id="left"></div>
+        <div id="right"></div>
+      </div>
+      <div id="ombd_shoutout">Movie info fetched via OMBD API: <a id = "omdb_link" target = "_blank" href="https://www.omdbapi.com/">https://www.omdbapi.com/</a></div>
 
 
       <!-- PAST MEETING ALBUM -->
@@ -76,7 +67,7 @@
   </div>
 
   
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 
 <footer id = "footer">

@@ -3,7 +3,6 @@
     src: url("fonts/BloodyModes-gwwYp.ttf") format("opentype");
 }
 
-
 /* Landing */
 #landing {
     width:100%;
@@ -43,10 +42,57 @@
 h1, h2{
     color: #c04646;
 }
+h3 {
+    font-family: Horror;
+    font-size: 3rem;
+    text-align: center;
+}
 
 .pa-gallery-player-widget {
     margin-left: auto;
     margin-right: auto;
     display:none;
 }
-/* -------- */
+#recent {
+    display: grid;
+    position: relative;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  
+#left {
+    background-color: #1f1f1f;
+    grid-column: 1;
+    text-align: left;
+    padding-right:3rem;
+}
+  
+#right {
+    padding-top: 5rem;
+    background-color: #1f1f1f;
+    grid-column: 2;
+    text-align: right;
+}
+#ombd_shoutout {
+    width:75%;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#omdb_link {
+    border: none;
+    color: whitesmoke;
+    font-size: 0.75rem;
+    margin:0;
+}
+#omdb_link:hover {
+    border: none;
+    background-color: rgb(184, 182, 182);
+    color: black;
+    font-size: 0.75rem;
+}
