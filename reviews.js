@@ -1,23 +1,23 @@
 // CREATE CONTENT FROM DYNAMO DB //////////////////////
 
-const dar = fetch('http://horror-forms.bdoestech.com/movies-darayus')
+const dar = fetch('http://reverse-proxy.bdoestech.com/?url=http://horror-forms.bdoestech.com/movies-darayus')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
     })
     .then(data => {
-        console.log('Data received');
+        console.log('Data received for Darayus');
         create_content(data, "Darayus");
     })
     .catch(error => {console.error('There was a problem with the fetch operation:', error);});
 
-const brendan = fetch('http://horror-forms.bdoestech.com/movies-brendan')
+const brendan = fetch('http://reverse-proxy.bdoestech.com/?url=http://horror-forms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
     })
     .then(data => {
-        console.log('Data received');
+        console.log('Data received for Brendan');
         create_content(data, "Brendan");
     })
     .catch(error => {console.error('There was a problem with the fetch operation:', error);});
