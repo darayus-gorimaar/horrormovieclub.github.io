@@ -122,6 +122,10 @@ footer a {
     #recent #right{text-align: center; padding: 1rem 0rem;}
     #recent #left{text-align: left; width: 60%; padding: 0; margin-left: auto; margin-right: auto;}
 
+    #landing {display: contents; text-align: center;}
+    .panel1{display: none;}
+    .panel2{display: none;}
+
     #ombd_shoutout {text-align: center;}
     iframe {width: 95%;}
 
@@ -147,6 +151,10 @@ footer a {
     #recent {display: contents; text-align: center;}
     #recent #right{text-align: center; padding: 1rem 0rem;}
     #recent #left{text-align: left; width: 70%; padding: 0; margin-left: auto; margin-right: auto;}
+
+    #landing {display: contents; text-align: center;}
+    .panel1{display: none;}
+    .panel2{display: none;}
 
     #ombd_shoutout {text-align: center;}
     iframe {width: 95%;}
