@@ -20,7 +20,7 @@ h1, h2, h3{
     width: 60%;
 }
 .film{
-    width:60%;
+    width:70%;
     box-sizing: border-box;
     margin: 0rem auto;
     text-align: center;
@@ -39,4 +39,7 @@ h1, h2, h3{
 }
 em {
     color: rgb(196, 144, 144);
+}
+#date {
+    font-family: 'Courier New', monospace;
 }

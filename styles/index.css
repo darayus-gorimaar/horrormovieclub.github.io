@@ -11,7 +11,8 @@
     background-color: #1f1f1f;
     font-size: 2em;
     margin-bottom: 1em;
-    
+    display: grid;
+
 }
 #landing .top-section {
     text-align: center;
@@ -20,7 +21,9 @@
     border-radius: 0.5em;
     box-shadow: inset 1em;
     margin: 1em auto;
-    width: 70%;
+    width: 85%;
+    grid-column: 2;
+
     /* max-height: 12rem; */
 }
 #landing h1 {
@@ -28,6 +31,7 @@
     font-weight: 800;
     margin: 0.75em auto;
     padding: 0em 1em;
+
 }
 /* -------- */
 
@@ -96,3 +100,219 @@ h3 {
     color: black;
     font-size: 0.75rem;
 }
+
+
+
+
+
+
+
+
+
+/* Panels */
+.panel1 {
+	/* width: 220px; */
+	position: relative;
+	display: flex;
+	justify-content: center;
+    grid-column: 1;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.panel2 {
+	/* width: 220px; */
+	position: relative;
+	display: flex;
+	justify-content: center;
+    grid-column: 3;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+.sconcePanelMiddle {
+	position: absolute;
+	top: 40px;
+	width: 85px;
+	border-width: 10rem 30px 0;
+	border-style: solid;
+	border-color: rgb(190,0,0) transparent;
+	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.75));
+	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.75));
+}
+
+.sconcePanelMiddle:before {
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: calc(-86.5vh + -35px);
+	left: -30px;
+	border-width: 0 73px 35px;
+	border-style: solid;
+	border-color: transparent transparent rgb(190,0,0);	
+}
+
+.sconcePanelFront {
+	position: absolute;
+	width: 30px;
+	height: 10rem;
+	top: 40px;
+	background: rgb(232,166,53);
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
+							-3px 2px 8px rgba(0,0,0,.1) inset,
+							3px 2px 8px rgba(0,0,0,.1) inset, 
+							0px -5px 8px rgba(0,0,0,.1) inset;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
+							-3px 2px 8px rgba(0,0,0,.1) inset,
+							3px 2px 8px rgba(0,0,0,.1) inset, 
+							0px -5px 8px rgba(0,0,0,.1) inset;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 
+							-3px 2px 8px rgba(0,0,0,.1) inset,
+							3px 2px 8px rgba(0,0,0,.1) inset, 
+							0px -5px 8px rgba(0,0,0,.1) inset;
+	-webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,.5));
+	filter: drop-shadow(0px 3px 3px rgba(0,0,0,.5));
+}
+
+.sconce {
+	position: absolute;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 50px;
+}
+
+.light {
+	position: relative;
+	width: 20px;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 90px solid rgba(255,215,0,0.15);
+	top: -54px;
+	-webkit-filter: drop-shadow(0px 0px 8px rgb(255,215,0));
+	filter: drop-shadow(0px 0px 8px rgb(255,215,0));
+}
+
+
+.light:after {
+	content: '';
+	position: absolute;
+	background: -webkit-linear-gradient(rgba(211,159,83,.3),
+																			rgba(109,73,37,0.6)),
+							-webkit-linear-gradient(-90deg,rgb(123,81,33),
+																			rgb(195,146,77),
+																			rgb(166,123,68));
+	background: -moz-linear-gradient(rgba(211,159,83,.3),
+																	 rgba(109,73,37,0.6)),
+							-moz-linear-gradient(-90deg,rgb(123,81,33),
+																	 rgb(195,146,77),
+																	 rgb(166,123,68));
+	background: -o-linear-gradient(rgba(211,159,83,.3),
+																 rgba(109,73,37,0.6)),
+							-o-linear-gradient(-90deg,rgb(123,81,33),
+																 rgb(195,146,77),
+																 rgb(166,123,68));
+	background: linear-gradient(rgba(211,159,83,.3),
+															rgba(109,73,37,0.6)),
+							linear-gradient(-90deg,rgb(123,81,33),
+															rgb(195,146,77),
+															rgb(166,123,68));
+	width: 46px;
+	height: 20px;
+	bottom: -9px;
+	right: -13px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.stem {
+	position: relative;
+	background: rgb(190,0,0);
+	width: 30px;
+	height: 40px;
+	top: -37px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
+							0px 1px 2px rgba(0,0,0,.2) inset, 
+							0px -3px 8px rgba(0,0,0,.2) inset;
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
+							0px 1px 2px rgba(0,0,0,.2) inset, 
+							0px -3px 8px rgba(0,0,0,.2) inset;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 
+							0px 1px 2px rgba(0,0,0,.2) inset, 
+							0px -3px 8px rgba(0,0,0,.2) inset;
+}
+
+.stem:before {
+	content: '';
+	position: absolute;
+	background: rgb(198,144,48);
+	width: 5px;
+	height: 100px;
+	top: -10px;
+	left: 13px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
+											-1px 1px 1px rgba(0,0,0,.7) inset,
+											1px 1px 1px rgba(0,0,0,.5) inset, 
+											0px -1px 1px rgba(0,0,0,.3) inset;
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
+									 -1px 1px 1px rgba(0,0,0,.7) inset,
+									 1px 1px 1px rgba(0,0,0,.5) inset, 
+									 0px -1px 1px rgba(0,0,0,.3) inset;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5), 
+							-1px 1px 1px rgba(0,0,0,.7) inset,
+							1px 1px 1px rgba(0,0,0,.5) inset, 
+							0px -1px 1px rgba(0,0,0,.3) inset;
+}
+
+
+/* 
+:root {
+    --h1_size: 6.5rem;
+
+}
+
+@media all and (max-width: 700px) {
+    .landing{display: contents; text-align: center;}
+    #landing .top-section { text-align: center; }
+    #recent #left{text-align: left; width: 60%; padding: 0; margin-left: auto; margin-right: auto;}
+
+    .panel1{display: none;}
+    .panel2{display: none;}
+
+}
+@media all and (min-width: 700px) and (max-width: 1099px) {
+    .landing{display: contents; text-align: center;}
+    #landing .top-section { 
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+
+    .panel1{display:none;}
+    .panel2{display:none;}
+
+}
+
+@media all and (min-width: 1100px) and (max-width: 1499px) {
+
+
+}
+
+@media all and (min-width: 1500px) and (max-width: 1999px) {
+
+
+}
+
+@media all and (min-width: 2000px) and (max-width: 3199px) {
+
+
+}
+
+
+@media all and (min-width: 3200px) {
+
+} */
