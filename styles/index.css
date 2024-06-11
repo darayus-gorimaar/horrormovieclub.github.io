@@ -101,6 +101,14 @@ h3 {
     font-size: 0.75rem;
 }
 
+
+
+
+
+
+
+
+
 /* Panels */
 .panel1 {
 	/* width: 220px; */
@@ -108,7 +116,7 @@ h3 {
 	display: flex;
 	justify-content: center;
     grid-column: 1;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-top: 2rem;
 }
 .panel2 {
@@ -117,7 +125,7 @@ h3 {
 	display: flex;
 	justify-content: center;
     grid-column: 3;
-    margin-right: 3rem;
+    margin-right: 4rem;
     margin-top: 2rem;
 }
 

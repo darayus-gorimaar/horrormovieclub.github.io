@@ -1,5 +1,5 @@
 //fetch DynamoDB data
-const brendan = fetch('https://corsproxy.io/?http://horror-forms.bdoestech.com/movies-brendan')
+const brendan = fetch('https://horror-forms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
@@ -15,7 +15,7 @@ const brendan = fetch('https://corsproxy.io/?http://horror-forms.bdoestech.com/m
 //fetches OMBD data using the API
 function fetchMovieDetails(title, year){
     // OMBD apikey=8e050c1e
-    fetch(`https://corsproxy.io/?http://www.omdbapi.com/?t=${title}&y=${year}&apikey=8e050c1e`)
+    fetch(`https://www.omdbapi.com/?t=${title}&y=${year}&apikey=8e050c1e`)
     .then(response => {
         if (!response.ok) {throw new Error('OMBD response was not ok');}
         return response.json();
