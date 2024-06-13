@@ -9,7 +9,8 @@
   <link rel="stylesheet" type="text/css" href="styles/common.css" />
   <link rel="icon" href="images/icon.JPG">
 	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.min.css"> -->
 </head>
 
 
@@ -24,10 +25,14 @@
 
   <div id = "movies">
     <div id = "search">
-      <input type="text" id = "myInput" onkeyup="searchFunction()" onkeydown="searchFunction()" placeholder="Search for movies...">
+      <input type="text" id = "searchInput" onkeyup="isEmpty()" placeholder="Search for movies...">
+      <input type="button" id = "searchButton" onclick="searchFunction()" value="Search">
     </div>
+
     <div id = "reviews"></div>
   </div>
+  <div id="pagination"></div> 
+
 
 
 <script src="reviews.js"></script>

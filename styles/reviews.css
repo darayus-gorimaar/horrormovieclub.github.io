@@ -12,12 +12,32 @@ h1, h2, h3{
     text-align: center;
     width: 100%;
 }
-#myInput {
+#searchInput {
     padding-left: 10px;
     font-size: 1.5rem;
     height: 2rem;
     margin: 1rem auto;
-    width: 60%;
+    width: 50%;
+    border-radius: 15px;
+
+}
+#searchButton {
+    
+    margin: 1rem auto;
+    background-color: #c04646;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    transition: 0.7s;
+    border: none 1px solid;
+    border-radius: 2rem;
+}
+#searchButton:hover {
+    background-color: #333;
+    color: whitesmoke;
+    text-decoration: none;
 }
 .film{
     width:70%;
@@ -42,4 +62,24 @@ em {
 }
 #date {
     font-family: 'Courier New', monospace;
+}
+#pagination {
+    text-align: center;
+    display: inline-block;
+}
+#pagination ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#pagination li.active {
+    display: inline;
+    margin:1rem;
+}
+#pagination li{
+    display: inline;
+    /* margin:1rem; */
+
 }

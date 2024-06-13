@@ -94,7 +94,7 @@ footer a {
     --h2_size: 4rem;
     --h3_size: 3rem;
 
-    --p_size: 1.25rem;
+    --p_size: 16px;
     --screen_height:50rem;
     --headshot_height:25rem;
     --photos_widget_width:40rem;
@@ -107,11 +107,12 @@ footer a {
 @media all and (max-width: 700px) {
     h1 {font-size: calc(var(--h1_size)*0.45);}
     h2 {font-size: calc(var(--h2_size)*0.45);}
-    p {font-size: calc(var(--p_size)*0.55);}
+    p {font-size: calc(var(--p_size)*0.6);}
 
-    #movies p {font-size: calc(var(--p_size)*0.45);}
+    #movies p {font-size: calc(var(--p_size)*0.6);}
     #movies h3 {font-size: calc(var(--h3_size)*0.45);}
-    #myInput {font-size: calc(var(--p_size)*0.65); height: 1.5rem;}    
+    #searchInput {font-size: calc(var(--p_size)*0.7); height: 1.5rem;}    
+    #searchButton {font-size: calc(var(--p_size)*0.7);}    
 
     #headshot{height: calc(var(--headshot_height)*0.3); width: auto; }
     #poster{height: calc(var(--headshot_height)*0.55); width: auto; }
@@ -142,7 +143,8 @@ footer a {
 
     #movies p {font-size: calc(var(--p_size)*0.75);}
     #movies h3 {font-size: calc(var(--h3_size)*0.75);}
-    #myInput {font-size: calc(var(--p_size)*0.75); height: 1.5rem;}
+    #searchInput {font-size: calc(var(--p_size)*0.75); height: 1.5rem;}    
+    #searchButton {font-size: calc(var(--p_size)*0.7);}    
 
     #headshot{height: calc(var(--headshot_height)*0.4); width: auto; }
     #poster{height: calc(var(--headshot_height)*0.8); width: auto; }
