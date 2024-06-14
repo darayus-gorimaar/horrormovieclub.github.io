@@ -1,3 +1,6 @@
+html {
+    overflow-x: hidden;
+}
 body {
     text-align: center;
     font-family: Verdana, sans-serif;
@@ -34,6 +37,7 @@ a:hover {
     color:#1f1f1f;
     text-decoration: none;
 }
+
 /* -------- */
 
 /* Topnav */

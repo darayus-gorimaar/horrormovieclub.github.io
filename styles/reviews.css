@@ -28,11 +28,11 @@ h1, h2, h3{
     color: whitesmoke;
     text-decoration: none;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1.25rem;
     transition: 0.7s;
     border: none 1px solid;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
 }
 #searchButton:hover {
     background-color: #333;
@@ -75,11 +75,37 @@ em {
     overflow: hidden;
 }
 #pagination li.active {
-    display: inline;
-    margin:1rem;
+    margin: 1rem;
+    background-color: #c04646;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.7s;
+    border: none 1px solid;
+    border-radius: 2rem;
 }
 #pagination li{
     display: inline;
-    /* margin:1rem; */
-
+}
+#pagination li.active:hover{
+    background-color: #333;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#pagination a{
+    background-color: #c04646;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.7s;
+    border: none;
+}
+#pagination a:hover{
+    background-color: #333;
+    color: whitesmoke;
+    text-decoration: none;
 }
