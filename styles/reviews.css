@@ -109,3 +109,14 @@ em {
     color: whitesmoke;
     text-decoration: none;
 }
+#movielink {
+    text-align: center;
+    color: #c04646;
+    font-family: Horror;
+    border: none;
+    font-size: 3rem;
+    margin: 0;
+}
+#movielink:hover {
+    background-color: #333;
+}

@@ -111,9 +111,10 @@ footer a {
 @media all and (max-width: 700px) {
     h1 {font-size: calc(var(--h1_size)*0.45);}
     h2 {font-size: calc(var(--h2_size)*0.45);}
-    p {font-size: calc(var(--p_size)*0.6);}
+    p {font-size: calc(var(--p_size)*0.65);}
 
     #movies p {font-size: calc(var(--p_size)*0.6);}
+    #movielink {font-size: calc(var(--h3_size)*0.45);}
     #movies h3 {font-size: calc(var(--h3_size)*0.45);}
     #searchInput {font-size: calc(var(--p_size)*0.7); height: 1.5rem;}    
     #searchButton {font-size: calc(var(--p_size)*0.7);}    
@@ -126,6 +127,11 @@ footer a {
     #recent {display: contents; text-align: center;}
     #recent #right{text-align: center; padding: 1rem 0rem;}
     #recent #left{text-align: left; width: 60%; padding: 0; margin-left: auto; margin-right: auto;}
+
+    #big-poster{height: calc(var(--headshot_height)*0.55); width: auto; }
+    #details {display: contents; text-align: center;}
+    #details #right{text-align: center; padding: 1rem 0rem;}
+    #details #poster{text-align: center; width: 60%; padding: 0; margin-left: auto; margin-right: auto;}
 
     #landing {display: contents; text-align: center;}
     .panel1{display: none;}
@@ -143,10 +149,11 @@ footer a {
 @media all and (min-width: 700px) and (max-width: 1099px) {
     h1 {font-size: calc(var(--h1_size)*0.6);}
     h2 {font-size: calc(var(--h2_size)*0.65);}
-    p {font-size: calc(var(--p_size)*0.7);}
+    p {font-size: calc(var(--p_size)*0.75);}
 
     #movies p {font-size: calc(var(--p_size)*0.75);}
     #movies h3 {font-size: calc(var(--h3_size)*0.75);}
+    #movielink {font-size: calc(var(--h3_size)*0.75);}
     #searchInput {font-size: calc(var(--p_size)*0.75); height: 1.5rem;}    
     #searchButton {font-size: calc(var(--p_size)*0.7);}    
 
@@ -159,6 +166,11 @@ footer a {
     #recent {display: contents; text-align: center;}
     #recent #right{text-align: center; padding: 1rem 0rem;}
     #recent #left{text-align: left; width: 70%; padding: 0; margin-left: auto; margin-right: auto;}
+
+    #big-poster{height: calc(var(--headshot_height)*0.8); width: auto; }
+    #details {display: contents; text-align: center;}
+    #details #right{text-align: center; padding: 1rem 0rem;}
+    #details #poster{text-align: center; width: 70%; padding: 0; margin-left: auto; margin-right: auto;}
 
     #landing {display: contents; text-align: center;}
     .panel1{display: none;}

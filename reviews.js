@@ -3,7 +3,7 @@ var dataLength = 0;
 async function caller () {
     await getBrendan();
     await getDar();
-    paginate(dataLength, 3);
+    paginate(dataLength, 4);
 }
 // FETCH DATA //////////////////////
 //https://corsproxy.io/?
@@ -47,7 +47,7 @@ function create_content(data, user) {
         if (!document.getElementById(div_name)) {
             dataLength++;
             createNewDiv(div_name, element.Date.N);
-            document.getElementById(div_name).innerHTML = `<h3 id="text">${element.Title.S} (${element.Year.N})</h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review.S}"</i><br> <em>${user} (${element.Rating.N}/10)<e/m></p>`;
+            document.getElementById(div_name).innerHTML = `<h3 id="text"><a id = "movielink" href = "movie.html?title=${element.Title.S}&year=${element.Year.N}">${element.Title.S} (${element.Year.N})</a></h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review.S}"</i><br> <em>${user} (${element.Rating.N}/10)<e/m></p>`;
         }
         else {
             document.getElementById(div_name).innerHTML += `<i><p id="text">"${element.Review.S}"</i><br> <em>${user} (${element.Rating.N}/10)<e/m></p>`;
@@ -79,8 +79,8 @@ function createNewDiv(id, date) {
 
 // PAGINATE ///////////////////////////////
 function paginate (dataLength, itemsOnEach){
-    console.log(itemsOnEach)
-    $("#reviews .film").slice(3).hide();
+    // console.log(itemsOnEach)
+    $("#reviews .film").slice(4).hide();
 
     $('#pagination').pagination({ 
 

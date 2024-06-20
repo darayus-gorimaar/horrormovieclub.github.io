@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Horror;
+    src: url("fonts/BloodyModes-gwwYp.ttf") format("opentype");
+}
+h1, h2, h3{
+    text-align: center;
+    color: #c04646;
+    font-family: Horror;
+}
+#details {
+    display: grid;
+    position: relative;
+    width: 75%;
+    margin: 16px auto;
+    text-align: center;
+    min-height: 25rem;
+}
+#poster {
+    grid-column: 1;
+    text-align: right;
+    margin-right: 16px;
+}
+  
+#right {
+    grid-column: 2;
+    text-align: left;
+    margin-left: 16px;
+}
+
+#plot {
+    position: relative;
+    width: 70%;
+    margin: 2rem auto;
+}
+#big-poster {
+    height: 25rem;
+    width:auto;
+}

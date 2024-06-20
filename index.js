@@ -1,5 +1,5 @@
 //fetch DynamoDB data
-const brendan = fetch('https://horror-forms.bdoestech.com/movies-brendan')
+const brendan = fetch('https://effedupforms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
