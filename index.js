@@ -22,32 +22,35 @@ function fetchMovieDetails(title, year){
     })
     .then(data => {
         console.log('Data received');
-        injectRight(data.Poster);
-        injectLeft(data);
+        injectTitle(data.Title);
+        injectRight(data);
+        injectLeft(data.Poster);
         console.log(data);
     })
     .catch(error => {console.error('There was a problem with the OMBD fetch operation:', error);});
 }
-
-function injectRight(content){
-    console.log(content);
-    document.getElementById("right").innerHTML += `<img id = "poster" src="${content}">`;
+function injectTitle(title){
+    document.getElementById("title").innerHTML += `<h3>${title}</h3>`;
 }
 function injectLeft(content){
+    console.log(content);
+    document.getElementById("left").innerHTML += `<img id = "poster" src="${content}">`;
+}
+function injectRight(content){
     //title
-    document.getElementById("left").innerHTML += `<h3>${content.Title} (${content.Year})</h3>`;
+    // document.getElementById("right").innerHTML += `<h3>${content.Title} (${content.Year})</h3>`;
     //Director
-    document.getElementById("left").innerHTML += `<p><b>Director:</b> ${content.Director}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Director:</b> ${content.Director}</p>`;
     //Language
-    document.getElementById("left").innerHTML += `<p><b>Lanuage:</b> ${content.Language}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Lanuage:</b> ${content.Language}</p>`;
     //Genre
-    document.getElementById("left").innerHTML += `<p><b>Genre:</b> ${content.Genre}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Genre:</b> ${content.Genre}</p>`;
     //Rated
-    document.getElementById("left").innerHTML += `<p><b>Rated:</b> ${content.Rated}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Rated:</b> ${content.Rated}</p>`;
     //Runtime
-    document.getElementById("left").innerHTML += `<p><b>Runtime:</b> ${content.Runtime}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Runtime:</b> ${content.Runtime}</p>`;
     //Plot
-    document.getElementById("left").innerHTML += `<p><b>Plot:</b> ${content.Plot}</p>`;
+    document.getElementById("right").innerHTML += `<p><b>Plot:</b> ${content.Plot}</p>`;
 }
 
 
