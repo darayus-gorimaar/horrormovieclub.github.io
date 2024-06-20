@@ -9,7 +9,7 @@ async function caller () {
 //https://corsproxy.io/?
 //https://thingproxy.freeboard.io/fetch/
 async function getDar() {
-    return await fetch('https://horror-forms.bdoestech.com/movies-darayus')
+    return await fetch('https://effedupforms.bdoestech.com/movies-darayus')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
@@ -22,7 +22,7 @@ async function getDar() {
     .catch(error => {console.error('There was a problem with the fetch operation:', error);});
 }
 async function getBrendan() {
-    return await fetch('https://horror-forms.bdoestech.com/movies-brendan')
+    return await fetch('https://effedupforms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
