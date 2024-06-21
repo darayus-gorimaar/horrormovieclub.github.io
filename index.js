@@ -7,7 +7,7 @@ const brendan = fetch('https://effedupforms.bdoestech.com/movies-brendan')
     .then(data => {
         console.log('Data received');
         var recent = getMostRecent(data);
-        fetchMovieDetails(recent.Title.S, recent.Year.N);
+        fetchMovieDetails(recent.Title, recent.Year);
         // console.log(recent);
     })
     .catch(error => {console.error('There was a problem with the DynamoDB fetch operation:', error);});
@@ -59,8 +59,8 @@ function getMostRecent(movies){
     var recent_date=0;
     var recent_movie = movies[0];
     movies.forEach(element => {
-        if (element.Date.N > recent_date){
-            recent_date = element.Date.N;
+        if (element.Date > recent_date){
+            recent_date = element.Date;
             recent_movie = element;
         }
       });

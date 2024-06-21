@@ -42,15 +42,15 @@ async function getBrendan() {
 function create_content(data, user) {
     // let sorted = sortJSON(data);
     data.forEach(element => {
-        let div_name = `${element.Title.S}`;
-        let date = DatetoDate(element.Date.N);
+        let div_name = `${element.Title}`;
+        let date = DatetoDate(element.Date);
         if (!document.getElementById(div_name)) {
             dataLength++;
-            createNewDiv(div_name, element.Date.N);
-            document.getElementById(div_name).innerHTML = `<h3 id="text"><a id = "movielink" href = "movie.html?title=${element.Title.S}&year=${element.Year.N}">${element.Title.S} (${element.Year.N})</a></h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review.S}"</i><br> <em>${user} (${element.Rating.N}/10)<e/m></p>`;
+            createNewDiv(div_name, element.Date);
+            document.getElementById(div_name).innerHTML = `<h3 id="text"><a id = "movielink" href = "movie.html?title=${element.Title}&year=${element.Year}">${element.Title} (${element.Year})</a></h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review}"</i><br> <em>${user} (${element.Rating}/10)<e/m></p>`;
         }
         else {
-            document.getElementById(div_name).innerHTML += `<i><p id="text">"${element.Review.S}"</i><br> <em>${user} (${element.Rating.N}/10)<e/m></p>`;
+            document.getElementById(div_name).innerHTML += `<i><p id="text">"${element.Review}"</i><br> <em>${user} (${element.Rating}/10)<e/m></p>`;
         }
     });
 }
