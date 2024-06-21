@@ -6,6 +6,8 @@ h1, h2, h3{
     text-align: center;
     color: #c04646;
     font-family: Horror;
+    width: 70%;
+    margin: 1rem auto;
 }
 #details {
     display: grid;
