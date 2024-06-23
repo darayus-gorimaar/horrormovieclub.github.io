@@ -30,8 +30,8 @@
     font-family: Horror;
     font-weight: 800;
     margin: 0.75em auto;
-    padding: 0em 1em;
-
+    padding: 0em 0.25em;
+	/* white-space: nowrap; */
 }
 /* -------- */
 
