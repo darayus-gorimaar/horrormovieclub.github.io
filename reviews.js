@@ -1,5 +1,8 @@
-caller();
 var dataLength = 0;
+const loader = document.querySelector("#loading");
+caller();
+
+
 async function caller () {
     await getBrendan();
     await getDar();
@@ -22,6 +25,7 @@ async function getDar() {
     .catch(error => {console.error('There was a problem with the fetch operation:', error);});
 }
 async function getBrendan() {
+    displayLoading();
     return await fetch('https://effedupforms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
@@ -29,6 +33,7 @@ async function getBrendan() {
     })
     .then(data => {
         console.log('Data received for Brendan');
+        hideLoading();
         console.log(data);
         create_content(data, "Brendan");
         paginate(5);
@@ -76,6 +81,25 @@ function createNewDiv(id, date) {
     }
 }
 //////////////////////////////////////////////////////////////////
+
+// showing loading
+function displayLoading() {
+    loader.classList.add("display");
+    const movies = document.getElementById("movies");
+    movies.style.display = 'none';
+}
+
+// hiding loading 
+function hideLoading() {
+    loader.classList.remove("display");
+    const element = document.getElementById("loading");
+    element.remove();
+    const warning = document.getElementById("warning");
+    warning.remove();
+    const movies = document.getElementById("movies");
+    movies.style.display = 'inline';
+}
+
 
 // PAGINATE ///////////////////////////////
 function paginate (dataLength, itemsOnEach){

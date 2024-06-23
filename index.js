@@ -1,16 +1,37 @@
 //fetch DynamoDB data
-const brendan = fetch('https://effedupforms.bdoestech.com/movies-brendan')
+
+const loader = document.querySelector("#loading");
+fetchLatestMovie();
+// showing loading
+function displayLoading() {
+    loader.classList.add("display");
+}
+
+// hiding loading 
+function hideLoading() {
+    loader.classList.remove("display");
+    const element = document.getElementById("loading");
+    element.remove();
+    const warning = document.getElementById("warning");
+    warning.remove();
+}
+
+function fetchLatestMovie(){
+    displayLoading();
+    fetch('https://effedupforms.bdoestech.com/movies-brendan')
     .then(response => {
         if (!response.ok) {throw new Error('Network response was not ok');}
         return response.json();
     })
     .then(data => {
         console.log('Data received');
+        hideLoading();
         var recent = getMostRecent(data);
         fetchMovieDetails(recent.Title, recent.Year);
         // console.log(recent);
     })
     .catch(error => {console.error('There was a problem with the DynamoDB fetch operation:', error);});
+}
 
 //fetches OMBD data using the API
 function fetchMovieDetails(title, year){
