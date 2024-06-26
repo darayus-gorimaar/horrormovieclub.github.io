@@ -4,7 +4,6 @@
 }
 h1, h2, h3{
     text-align: center;
-    color: #c04646;
     font-family: Horror;
 }
 
@@ -24,7 +23,7 @@ h1, h2, h3{
 #searchButton {
     
     margin: 1rem auto;
-    background-color: #c04646;
+    background-color: rgb(190,0,0);
     color: whitesmoke;
     text-decoration: none;
     padding: 5px;
@@ -44,7 +43,7 @@ h1, h2, h3{
     box-sizing: border-box;
     margin: 0rem auto;
     text-align: center;
-    color: #c04646;
+    color: rgb(190,0,0);
     padding: 10px;
     font-size: 2rem;
     border-bottom: 2px solid whitesmoke;
@@ -76,7 +75,7 @@ em {
 }
 #pagination li.active {
     margin: 1rem;
-    background-color: #c04646;
+    background-color: rgb(190,0,0);
     color: whitesmoke;
     text-decoration: none;
     padding: 10px;
@@ -95,7 +94,7 @@ em {
     text-decoration: none;
 }
 #pagination a{
-    background-color: #c04646;
+    background-color: rgb(190,0,0);
     color: whitesmoke;
     text-decoration: none;
     padding: 10px;
@@ -111,7 +110,7 @@ em {
 }
 #movielink {
     text-align: center;
-    color: #c04646;
+    color: rgb(190,0,0);
     font-family: Horror;
     border: none;
     font-size: 3rem;
@@ -124,7 +123,7 @@ em {
     width: 4rem;
     height: 4rem;
     border: 5px solid whitesmoke;
-    border-top: 6px solid #c04646;
+    border-top: 6px solid rgb(190,0,0);
     border-radius: 100%;
     margin: auto;
     visibility: hidden;

@@ -1,6 +1,9 @@
 html {
     overflow-x: hidden;
 }
+h1, h2, h3 {
+    color: rgb(190,0,0);
+}
 body {
     text-align: center;
     font-family: Verdana, sans-serif;
@@ -9,7 +12,7 @@ body {
     font-weight: 200;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f;
+    background-color: #0f0f0f;
     color: #fff;
     display:flex;
     flex-direction: column;
@@ -42,8 +45,9 @@ a:hover {
 
 /* Topnav */
 .topnav {
-    background-color: #333;
+    background-color: #0f0f0f;
     overflow: hidden;
+    border-bottom: 1px rgba(179, 176, 176, 0.445) solid;
 }
 .topnav a {
     margin:0;
@@ -62,7 +66,7 @@ a:hover {
     text-decoration: none;
 }
 .topnav a.active {
-    background-color: #c04646;
+    background-color: rgb(190,0,0);
     color: white;
 }
 .topnav a.active:hover {
@@ -77,9 +81,9 @@ a:hover {
 footer {
     font-family: 'Courier New', monospace;
     margin-top:auto;
-    background-color: #1f1f1f;
+    background-color: #0f0f0f;
     text-align: left;
-    border-top: whitesmoke 1px solid;
+    border-top: 1px rgba(179, 176, 176, 0.445) solid;
 }
 footer a {
     border: none;
