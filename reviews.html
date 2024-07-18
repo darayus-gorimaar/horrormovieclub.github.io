@@ -7,10 +7,9 @@
   <title>Horror Movie Club</title>
   <link rel="stylesheet" type="text/css" href="styles/reviews.css" />
   <link rel="stylesheet" type="text/css" href="styles/common.css" />
-  <link rel="icon" href="images/icon.JPG">
+  <link rel="icon" href="images/icon.PNG">
 	<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> 
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.min.css"> -->
 </head>
 
 
@@ -23,15 +22,18 @@
   </div>
 
   <div id = "warning">
-    <p>Our backend app is in idle mode. Content will load in ~60 seconds :)</p>
+    <p>Content loading from backend app :)</p>
   </div>
   <div id="loading"></div>
 
   <div id = "movies">
     <div id = "search">
       <input type="text" id = "searchInput" onkeyup="isEmpty()" placeholder="Search for movies...">
+      <!-- <div id="star" style="--rating: 50;">★</div> -->
       <input type="button" id = "searchButton" onclick="searchFunction()" value="Search">
     </div>
+
+    <!-- <div class="ratings"><div class="empty-stars"></div><div class="full-stars" style="width:70%"></div></div> -->
 
     <div id = "reviews"></div>
   </div>

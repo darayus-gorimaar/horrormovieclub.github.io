@@ -80,8 +80,8 @@ function getMostRecent(movies){
     var recent_date=0;
     var recent_movie = movies[0];
     movies.forEach(element => {
-        if (element.Date > recent_date){
-            recent_date = element.Date;
+        if (Number(element.Date) > recent_date){
+            recent_date = Number(element.Date);
             recent_movie = element;
         }
       });

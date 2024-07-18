@@ -49,32 +49,44 @@ function create_content(data, user) {
     data.forEach(element => {
         let div_name = `${element.Title}`;
         let date = DatetoDate(element.Date);
+        var percent = element.Rating * 10;
+        if (percent > 100) {
+            percent = 100;
+        }
+
         if (!document.getElementById(div_name)) {
+            // console.log(div_name);
             dataLength++;
             createNewDiv(div_name, element.Date);
-            document.getElementById(div_name).innerHTML = `<h3 id="text"><a id = "movielink" href = "movie.html?title=${element.Title}&year=${element.Year}">${element.Title} (${element.Year})</a></h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review}"</i><br> <em>${user} (${element.Rating}/10)<e/m></p>`;
+            // if (document.getElementById(div_name) != null) {console.log("yes");}
+            document.getElementById(div_name).innerHTML += `<h3 id="text"><a id = "movielink" href = "movie.html?title=${element.Title}&year=${element.Year}">${element.Title} (${element.Year})</a></h3><i><p id="date">Watched on: ${date}</p> <p id="text">"${element.Review}"</i><br> <em>${user} (${element.Rating}/10)<e/m></p>`;
+            document.getElementById(div_name).innerHTML += `<div class="ratings"><div class="empty-stars"></div><div class="full-stars" style="width:${percent}%"></div></div>`;
         }
         else {
             document.getElementById(div_name).innerHTML += `<i><p id="text">"${element.Review}"</i><br> <em>${user} (${element.Rating}/10)<e/m></p>`;
+            document.getElementById(div_name).innerHTML += `<div class="ratings"><div class="empty-stars"></div><div class="full-stars" style="width:${percent}%"></div></div>`;
         }
     });
 }
 // creates and places new div in chronological order
 function createNewDiv(id, date) {
+    // console.log(id);
     const newDiv = document.createElement("div");
     let reviews = document.getElementById("reviews").getElementsByClassName("film");
     newDiv.setAttribute("id", id);
     newDiv.setAttribute("date", date)
     newDiv.setAttribute("class", "film");
-    
+    // console.log(newDiv.id);
+    datei = Number(date);
     if (reviews.length == 0){
         document.getElementById("reviews").appendChild(newDiv); 
     }
     else {
         for (let i = 0; i < reviews.length; i++) {
-            current = reviews[i].getAttribute("date");
+            current = Number(reviews[i].getAttribute("date"));
             if(date > current) {
                 reviews[i].insertAdjacentElement('beforebegin', newDiv);
+                // console.log("Div placement successful");
                 break;
             }
         }
@@ -127,10 +139,10 @@ function paginate (dataLength, itemsOnEach){
 function DatetoDate(date_DB) {
     var str = date_DB.toString();
     if(str.length == 8){
-        return str.substring(0, 2) + "/" + str.substring(2, 4) + "/" + str.substring(4, 7);
+        return str.substring(0, 2) + "/" + str.substring(2, 4) + "/" + str.substring(4, 8);
     }
     if(str.length == 7){
-        return str.substring(0, 1) + "/" + str.substring(1, 3) + "/" + str.substring(3, 6);
+        return str.substring(0, 1) + "/" + str.substring(1, 3) + "/" + str.substring(3, 7);
     }
 }
 //////////////////////////////////////////////////////////////////

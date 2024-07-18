@@ -115,9 +115,9 @@ footer a {
 @media all and (max-width: 700px) {
     h1 {font-size: calc(var(--h1_size)*0.3);}
     h2 {font-size: calc(var(--h2_size)*0.3);}
-    p {font-size: calc(var(--p_size)*0.65);}
+    p {font-size: calc(var(--p_size)*0.75);}
 
-    #movies p {font-size: calc(var(--p_size)*0.6);}
+    #movies p {font-size: calc(var(--p_size)*0.75);}
     #movielink {font-size: calc(var(--h3_size)*0.45);}
     #movies h3 {font-size: calc(var(--h3_size)*0.45);}
     #searchInput {font-size: calc(var(--p_size)*0.7); height: 1.5rem;}    
