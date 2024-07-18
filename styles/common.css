@@ -148,6 +148,9 @@ footer a {
 
     .film {width: 90%;} 
 
+    #slideshow{width: 75%;}
+
+
 }
 
 @media all and (min-width: 700px) and (max-width: 1099px) {
@@ -186,6 +189,8 @@ footer a {
     .pa-gallery-player-widget{height: auto; width: 75%; }
 
     .film {width: 80%;} 
+
+    #slideshow{width: 75%;}
 
 
 }

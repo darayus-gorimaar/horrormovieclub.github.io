@@ -295,6 +295,53 @@ h1, h2{
 #warning p {
     font-size: 24px;
 }
+
+#slideshow {
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+#slideshow{
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    margin: 1rem;
+    background-color: rgb(190,0,0);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.7s;
+    border: 1px solid #333;
+    border-radius: 16px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #333;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+
+
 /* 
 :root {
     --h1_size: 6.5rem;
